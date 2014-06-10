@@ -1,0 +1,99 @@
+
+<P>
+Jollo is a simple card game which the children from Logonia love to 
+play. It is played between two players with a normal deck of 52 cards. 
+In the game, cards are ordered according to their rank and suit, 
+forming a sequence of 52 distinct values. 
+
+<P>
+The game is composed of three rounds, played in a best-of-three series 
+(a player must win two rounds to win the game). At the beginning of 
+the game the deck is shuffled and each player is given a hand of 
+three cards. In each round the players show one card to each other 
+and the player with the highest card wins the round. The cards shown 
+in a round are discarded (i.e., they cannot be shown again). 
+
+<P>
+The King's son loves to play the game. But he is not very smart, 
+losing frequently to his little sister. And when he loses, he cries 
+so loud no one can stand it. The servant who deals the cards to the 
+Prince and his sister is afraid he will be sent to prison if the 
+Prince continues to lose. The servant is allowed to see every card 
+he deals, and after dealing five cards (three to the Princess and 
+two to the Prince) he wants to know which is the lowest card he 
+should deal to the Prince so that there is no chance he will lose 
+the game, no matter how badly he plays.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001001000000000000000">
+Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+Each test case is given in a single line that contains five distinct 
+integers <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>, <SPAN CLASS="MATH"><I>C</I></SPAN>, <SPAN CLASS="MATH"><I>X</I></SPAN> and <SPAN CLASS="MATH"><I>Y</I></SPAN>, describing the cards dealt to the 
+players. The first three cards are given to the Princess 
+<!-- MATH
+ $(1 \le A, B, C \le 52)$
+ -->
+<SPAN CLASS="MATH">(1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4814img1.png"
+ ALT="$ \le$"><I>A</I>, <I>B</I>, <I>C</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4814img1.png"
+ ALT="$ \le$">52)</SPAN> and the last two cards are given to 
+the Prince <!-- MATH
+ $(1 \le X, Y \le 52)$
+ -->
+<SPAN CLASS="MATH">(1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4814img1.png"
+ ALT="$ \le$"><I>X</I>, <I>Y</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4814img1.png"
+ ALT="$ \le$">52)</SPAN>. The last test case is followed by a 
+line containing five zeros.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001002000000000000000">
+Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+For each test case output a single line. If there exists a card that 
+will make the Prince win the game no matter how badly he plays, you 
+must print the lowest such a card. Otherwise, print <TT>-1</TT>. 
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001003000000000000000">
+Sample Input</A>&nbsp;</FONT>
+</H2> 
+
+<P>
+<PRE>
+28 51 29 50 52
+50 26 19 10 27
+10 20 30 24 26
+46 48 49 47 50
+0 0 0 0 0
+</PRE>
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001004000000000000000">
+Sample Output</A>&nbsp;</FONT>
+</H2> 
+
+<P>
+<PRE>
+30 
+-1 
+21 
+51
+</PRE> 
+
+<P>
