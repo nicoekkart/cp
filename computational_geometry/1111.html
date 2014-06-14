@@ -1,0 +1,118 @@
+
+<P>
+Allied Chute Manufacturers is a company that builds trash chutes. A trash chute is a 
+hollow tube installed in buildings so that trash dropped in at the top will fall down 
+and be collected in the basement. Designing trash chutes is actually highly nontrivial. 
+Depending on what kind of trash people are expected to drop into them, the trash chute 
+needs to have an appropriate size. And since the cost of manufacturing a trash chute is 
+proportional to its size, the company always would like to build a chute that is as small 
+as possible. Choosing the right size can be tough though.
+
+<P>
+We will consider a 2-dimensional simplification of the chute design problem. A trash 
+chute points straight down and has a constant width. Objects that will be dropped into 
+the trash chute are modeled as polygons. Before an object is dropped into the chute it 
+can be rotated so as to provide an optimal fit. Once dropped, it will travel on a 
+straight path downwards and will not rotate in flight. The following figure shows how 
+an object is first rotated so it fits into the trash chute.
+
+<P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ $\epsfbox{p5138.eps}$
+ -->
+<IMG
+ WIDTH="478" HEIGHT="391" ALIGN="BOTTOM" BORDER="0"
+ SRC="p5138.png"
+ ALT="\epsfbox{p5138.eps}">
+</DIV>
+
+<P>
+Your task is to compute the smallest chute width that will allow a given polygon to pass 
+through.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001001000000000000000">
+Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+The input contains several test cases. Each test case starts with a line containing an 
+integer <SPAN CLASS="MATH"><I>n</I></SPAN> <!-- MATH
+ $(3 \le n \le 100)$
+ -->
+<SPAN CLASS="MATH">(3<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="5138img2.png"
+ ALT="$ \le$"><I>n</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="5138img2.png"
+ ALT="$ \le$">100)</SPAN>, the number of points in the polygon that models the 
+trash item. 
+
+<P>
+The next <SPAN CLASS="MATH"><I>n</I></SPAN> lines then contain pairs of integers <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> and <SPAN CLASS="MATH"><I>y</I><SUB>i</SUB></SPAN> <!-- MATH
+ $(0 \le x_{i}, 
+y_{i} \le 10^{4})$
+ -->
+<SPAN CLASS="MATH">(0<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="5138img2.png"
+ ALT="$ \le$"><I>x</I><SUB>i</SUB>, <I>y</I><SUB>i</SUB><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="5138img2.png"
+ ALT="$ \le$">10<SUP>4</SUP>)</SPAN>, giving the coordinates of the polygon vertices in order. 
+All points in one test case are guaranteed to be mutually distinct and the polygon 
+sides will never intersect. (Technically, there is one inevitable exception of two 
+neighboring sides sharing their common vertex. Of course, this is not considered an 
+intersection.)
+
+<P>
+The last test case is followed by a line containing a single zero.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001002000000000000000">
+Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+For each test case, display its case number followed by the width of the smallest 
+trash chute through which it can be dropped. Display the minimum width with exactly 
+two digits to the right of the decimal point, rounding up to the nearest multiple of 
+<SPAN CLASS="MATH">1/100</SPAN>. Answers within <SPAN CLASS="MATH">1/100</SPAN> of the correct rounded answer will be accepted.
+
+<P>
+Follow the format of the sample output.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001003000000000000000">
+Sample Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+3
+0 0
+3 0
+0 4
+4
+0 10
+10 0
+20 10
+10 20
+0
+</PRE>
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001004000000000000000">
+Sample Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+Case 1: 2.40
+Case 2: 14.15

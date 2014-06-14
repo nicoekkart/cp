@@ -1,0 +1,134 @@
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Elevator</TITLE>
+<META NAME="description" CONTENT="Elevator">
+<META NAME="keywords" CONTENT="htmlatex">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="htmlatex.css">
+
+</HEAD>
+
+<BODY LANG="EN" BGCOLOR=#FFFFFF>
+
+<H1><BR CLEAR=ALL><CENTER><TABLE BGCOLOR=#0000ff><TR><TD><B><FONT SIZE=5 COLOR=#FFff00>&nbsp;<A NAME="SECTION0001000000000000000000">
+Elevator</A>&nbsp;</FONT></B></TABLE></CENTER>
+</H1>
+The FCC (Factory of Cylinders of Carbon) manufactures various types of cylinders of carbon. FCC is installed on the tenth floor of a building, and uses the several building's elevators
+to transport the cylinders. For security, the cylinders must be transported in the upright position, and since they are heavy, at most two cylinders can be transported in a single elevator
+ride. The elevators have the shape of a parallelepiped and their height is always greater than
+the height of the cylinders.
+
+<P>
+To minimize the number of elevator trips to transport the cylinders, the FCC wants, whenever possible, to put two cylinders in the elevator. The figure below illustrates, schematically
+(top view) a case where this is possible (a), and a case where this is not possible (b):
+
+<P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ $\epsfbox{p11834.eps}$
+ -->
+<IMG
+ WIDTH="682" HEIGHT="285" ALIGN="BOTTOM" BORDER="0"
+ SRC="p11834.png"
+ ALT="\epsfbox{p11834.eps}">
+</DIV>
+
+<P>
+As there is a very large amount of elevators and types of cylinders, FCC hired you to write a
+program that, given the dimensions of the elevator and of the two cylinders, determines whether
+it is possible to put the two cylinders in the elevator.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001001000000000000000">
+Input</A>&nbsp;</FONT>
+</H2>
+The input contains several test cases. The first and only line of each test case contains four
+integers <SPAN CLASS="MATH"><I>L</I></SPAN>, <SPAN CLASS="MATH"><I>C</I></SPAN>, <SPAN CLASS="MATH"><I>R</I><SUB>1</SUB></SPAN> and <SPAN CLASS="MATH"><I>R</I><SUB>2</SUB></SPAN> , separated by blanks, indicating the width (<!-- MATH
+ $1 \le L \le 100$
+ -->
+<SPAN CLASS="MATH">1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="11834img2.png"
+ ALT="$ \le$"><I>L</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="11834img2.png"
+ ALT="$ \le$">100</SPAN>) and the length (<!-- MATH
+ $1 \le C \le 100$
+ -->
+<SPAN CLASS="MATH">1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="11834img2.png"
+ ALT="$ \le$"><I>C</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="11834img2.png"
+ ALT="$ \le$">100</SPAN>) of the elevator and the radii of the cylinders (<!-- MATH
+ $1 \le R_1 , R_2 \le 100$
+ -->
+<SPAN CLASS="MATH">1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="11834img2.png"
+ ALT="$ \le$"><I>R</I><SUB>1</SUB>, <I>R</I><SUB>2</SUB><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="11834img2.png"
+ ALT="$ \le$">100</SPAN>).
+
+<P>
+The last test case is followed by a line containing four zeros separated by blanks.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001002000000000000000">
+Output</A>&nbsp;</FONT>
+</H2>
+For each test case your program should print a single line with a single character, `<TT>S</TT>' if you can put the two cylinders in the elevator and `<TT>N</TT>' otherwise.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001003000000000000000">
+Sample Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+11 9 2 3
+7 8 3 2
+10 15 3 7
+8 9 3 2
+0 0 0 0
+</PRE>
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001004000000000000000">
+Sample Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+S
+N
+N
+S
+</PRE> 
+
+<P>
+
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
+</HTML>
